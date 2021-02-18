@@ -1,2 +1,5 @@
-package PACKAGE_NAME;public class BRRRR {
+public class BRRRR {
+    public void main (){
+        System.out.println("brrrrr");
+    }
 }
