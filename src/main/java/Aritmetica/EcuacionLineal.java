@@ -8,7 +8,7 @@ public class EcuacionLineal {
         this.a = a;
         this.b = b;
     }
-
+//Prueba
     public boolean haySolucion(){
         return a != 0;
 
