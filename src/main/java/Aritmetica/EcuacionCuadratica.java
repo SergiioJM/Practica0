@@ -14,7 +14,7 @@ public class EcuacionCuadratica {
     }
 
     public boolean haySolucion(){
-        if ((-4 * a * c) < 0)
+        if ((a == 0 && b == 0)  || (b*b -(4 * a * c) < 0))
             return false;
         else
             return true;
@@ -38,8 +38,9 @@ public class EcuacionCuadratica {
             resultado.add(-b / a);
         }
         else {
-            resultado.add((-b + Math.sqrt((b*b) - 4 * a * c)/ 2 * a));
-            resultado.add((-b - Math.sqrt((b*b) - 4 * a * c)/ 2 * a));
+            double sqrt = Math.sqrt((b * b) - (4 * a * c));
+            resultado.add(( (-b + sqrt) / (2 * a)));
+            resultado.add(( (-b - sqrt) / (2 * a)));
         }
         return resultado;
     }

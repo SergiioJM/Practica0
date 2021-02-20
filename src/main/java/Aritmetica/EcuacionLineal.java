@@ -11,8 +11,8 @@ public class EcuacionLineal {
 
     public boolean haySolucion(){
         return a != 0;
-
     }
+
     public double solucion (){
         return -b/a;
     }
