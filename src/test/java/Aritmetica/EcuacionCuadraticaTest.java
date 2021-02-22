@@ -2,10 +2,7 @@ package Aritmetica;
 
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
-
 import java.util.HashSet;
-import java.util.logging.Handler;
-
 import static org.junit.jupiter.api.Assertions.*;
 
 class EcuacionCuadraticaTest {
@@ -39,8 +36,6 @@ class EcuacionCuadraticaTest {
 
         objeto2 = new EcuacionCuadratica(0,2,0);
         assertTrue(objeto2.haySolucion());
-
-
     }
 
     @Test
@@ -86,8 +81,6 @@ class EcuacionCuadraticaTest {
         solucion.add(0d);
         solucion.add(-1d);
         assertEquals(solucion, objeto.solucion());
-
-
 
     }
 }
