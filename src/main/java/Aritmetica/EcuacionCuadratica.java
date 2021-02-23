@@ -2,7 +2,7 @@ package Aritmetica;
 
 import java.util.HashSet;
 
-public class EcuacionCuadratica {
+public class EcuacionCuadratica implements Ecuacion {
     private final double a;
     private final double b;
     private final double c;
@@ -25,7 +25,7 @@ public class EcuacionCuadratica {
         if (a == 0) {
             EcuacionLineal objeto = new EcuacionLineal(b ,c);
             if (objeto.haySolucion()) {
-                resultado.add(objeto.solucion());
+                return (objeto.solucion());
             }
         }
         else if (b == 0){

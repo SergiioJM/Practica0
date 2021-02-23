@@ -1,6 +1,8 @@
 package Aritmetica;
 
-public class EcuacionLineal {
+import java.util.HashSet;
+
+public class EcuacionLineal implements Ecuacion{
     private final double a;
     private final double b;
 
@@ -13,7 +15,9 @@ public class EcuacionLineal {
         return a != 0;
     }
 
-    public double solucion (){
-        return -b/a;
+    public HashSet<Double> solucion (){
+        HashSet<Double> resultado = new HashSet<>();
+        resultado.add(-b/a);
+        return resultado;
     }
 }
