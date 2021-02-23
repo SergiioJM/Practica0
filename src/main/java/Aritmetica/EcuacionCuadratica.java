@@ -20,9 +20,8 @@ public class EcuacionCuadratica {
             return true;
     }
 
-
     public HashSet<Double> solucion(){
-        HashSet<Double> resultado = new HashSet<Double>();
+        HashSet<Double> resultado = new HashSet<>();
         if (a == 0) {
             EcuacionLineal objeto = new EcuacionLineal(b ,c);
             if (objeto.haySolucion()) {
