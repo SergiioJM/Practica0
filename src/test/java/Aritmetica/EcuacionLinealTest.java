@@ -15,42 +15,47 @@ class EcuacionLinealTest {
         Ecuacion objeto = new EcuacionLineal(0,2);
         assertFalse(objeto.haySolucion());
 
-        Ecuacion objeto2 = new EcuacionLineal(2,3);
-        assertTrue(objeto2.haySolucion());
+        objeto = new EcuacionLineal(2,3);
+        assertTrue(objeto.haySolucion());
 
-        Ecuacion objeto3 = new EcuacionLineal(4,6);
-        assertTrue(objeto3.haySolucion());
+        objeto = new EcuacionLineal(4,6);
+        assertTrue(objeto.haySolucion());
 
-        Ecuacion objeto4 = new EcuacionLineal(0,0);
-        assertFalse(objeto4.haySolucion());
+        objeto = new EcuacionLineal(0,0);
+        assertFalse(objeto.haySolucion());
 
-        Ecuacion objeto5 = new EcuacionLineal(5,0);
-        assertTrue(objeto5.haySolucion());
+        objeto = new EcuacionLineal(5,0);
+        assertTrue(objeto.haySolucion());
     }
 
     @Test
     @DisplayName("Test para saber el resultado")
     void solucion() {
-        Ecuacion objeto = new EcuacionLineal(2,2);
-        HashSet<Double> solucion = new HashSet<Double>();
-        solucion.add(-1d);
-        assertEquals(solucion, objeto.solucion());
 
-        Ecuacion objeto2 = new EcuacionLineal(2,3);
-        solucion = new HashSet<Double>();
-        solucion.add(-1.5);
-        assertEquals(solucion, objeto2.solucion());
+            Ecuacion objeto = new EcuacionLineal(2, 2);
+            HashSet<Double> solucion = new HashSet<Double>();
+            solucion.add(-1d);
+            assertEquals(solucion, objeto.solucion());
 
-        Ecuacion objeto3 = new EcuacionLineal(4,6);
-        solucion = new HashSet<Double>();
-        solucion.add(-1.5);
-        assertEquals(solucion,objeto3.solucion());
+            objeto = new EcuacionLineal(2, 3);
+            solucion = new HashSet<Double>();
+            solucion.add(-1.5);
+            assertEquals(solucion, objeto.solucion());
 
-        Ecuacion objeto4 = new EcuacionLineal(5,0);
-        solucion = new HashSet<Double>();
-        solucion.add(-0d);
-        assertEquals(solucion,objeto4.solucion());
+            objeto = new EcuacionLineal(4, 6);
+            solucion = new HashSet<Double>();
+            solucion.add(-1.5);
+            assertEquals(solucion, objeto.solucion());
 
+            objeto = new EcuacionLineal(5, 0);
+            solucion = new HashSet<Double>();
+            solucion.add(-0d);
+            assertEquals(solucion, objeto.solucion());
 
+            objeto = new EcuacionLineal(0, 5);
+            solucion = new HashSet<Double>();
+            solucion.add(-0d);
+            assertEquals(solucion, objeto.solucion());
+
+        }
     }
-}

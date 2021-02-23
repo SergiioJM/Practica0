@@ -10,7 +10,7 @@ class EcuacionCuadraticaTest {
     @Test
     @DisplayName("Test para saber si hay solución")
     void haySolucion() {
-        EcuacionCuadratica objeto2 = new EcuacionCuadratica(1,-5,6);
+        Ecuacion objeto2 = new EcuacionCuadratica(1,-5,6);
         assertTrue(objeto2.haySolucion());
 
         objeto2 = new EcuacionCuadratica(2,-7,3);
@@ -43,7 +43,7 @@ class EcuacionCuadraticaTest {
     void solucion() {
 
         //Prueba 1  Sin 0s
-        EcuacionCuadratica objeto = new EcuacionCuadratica(1,-5,6);
+        Ecuacion objeto = new EcuacionCuadratica(1,-5,6);
         HashSet<Double> solucion = new HashSet<Double>();
         solucion.add(3d);
         solucion.add(2d);

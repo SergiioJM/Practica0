@@ -1,5 +1,6 @@
 package Aritmetica;
 
+import java.io.NotActiveException;
 import java.util.HashSet;
 
 public class EcuacionLineal implements Ecuacion{
