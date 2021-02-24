@@ -18,7 +18,12 @@ public class EcuacionLineal implements Ecuacion{
 
     public HashSet<Double> solucion (){
         HashSet<Double> resultado = new HashSet<>();
-        resultado.add(-b/a);
+        if (a == 0 && b == 0){
+            resultado.add(Double.POSITIVE_INFINITY);
+        }
+        else {
+            resultado.add(-b / a);
+        }
         return resultado;
     }
 }
